@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="MySQL - @localhost" uuid="4656dcf9-027a-4d3e-9aa0-8569112c79f6">
+      <database-info product="MySQL" version="5.1.73-community" jdbc-version="3.0" driver-name="MySQL-AB JDBC Driver" driver-version="mysql-connector-java-5.0.8 ( Revision: ${svn.Revision} )">
+        <extra-name-characters>#@</extra-name-characters>
+        <identifier-quote-string>`</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower" />
+      <user-name>root</user-name>
+      <introspection-schemas>*:,store</introspection-schemas>
+    </data-source>
+    <data-source name="MySQL - horisont@localhost" uuid="3a95bf62-3497-424b-b051-578f877261b6">
+      <database-info product="MySQL" version="5.1.73-community" jdbc-version="3.0" driver-name="MySQL-AB JDBC Driver" driver-version="mysql-connector-java-5.0.8 ( Revision: ${svn.Revision} )">
+        <extra-name-characters>#@</extra-name-characters>
+        <identifier-quote-string>`</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower" />
+      <user-name>root</user-name>
+      <introspection-schemas>*:api,horisont,information_schema,mysql,oas,project,shift_r,shop,store,test</introspection-schemas>
+    </data-source>
+  </component>
+</project>

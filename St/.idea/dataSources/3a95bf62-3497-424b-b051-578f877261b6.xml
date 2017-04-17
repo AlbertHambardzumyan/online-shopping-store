@@ -1,0 +1,2480 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="MySQL - horisont@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.1">
+    <root id="1"/>
+    <schema id="2" parent="1" name="api">
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="horisont">
+      <Visible>1</Visible>
+    </schema>
+    <schema id="4" parent="1" name="information_schema">
+      <Visible>1</Visible>
+    </schema>
+    <schema id="5" parent="1" name="mysql">
+      <Visible>1</Visible>
+    </schema>
+    <schema id="6" parent="1" name="oas">
+      <Visible>1</Visible>
+    </schema>
+    <schema id="7" parent="1" name="project">
+      <Visible>1</Visible>
+    </schema>
+    <schema id="8" parent="1" name="shift_r">
+      <Visible>1</Visible>
+    </schema>
+    <schema id="9" parent="1" name="shop">
+      <Visible>1</Visible>
+    </schema>
+    <schema id="10" parent="1" name="store">
+      <Visible>1</Visible>
+    </schema>
+    <schema id="11" parent="1" name="test">
+      <Visible>1</Visible>
+    </schema>
+    <table id="12" parent="2" name="sot"/>
+    <table id="13" parent="2" name="user"/>
+    <table id="14" parent="3" name="absences"/>
+    <table id="15" parent="3" name="addresses"/>
+    <table id="16" parent="3" name="calendars"/>
+    <table id="17" parent="3" name="contacts"/>
+    <table id="18" parent="3" name="employeecalendars"/>
+    <table id="19" parent="3" name="employeegroups"/>
+    <table id="20" parent="3" name="employeeroles"/>
+    <table id="21" parent="3" name="employees"/>
+    <table id="22" parent="3" name="groups"/>
+    <table id="23" parent="3" name="logins"/>
+    <table id="24" parent="3" name="needs"/>
+    <table id="25" parent="3" name="privileges"/>
+    <table id="26" parent="3" name="projects"/>
+    <table id="27" parent="3" name="roles"/>
+    <table id="28" parent="3" name="scheduleneeds"/>
+    <table id="29" parent="3" name="schedules"/>
+    <table id="30" parent="3" name="scheduleshifts"/>
+    <table id="31" parent="3" name="shifts"/>
+    <table id="32" parent="3" name="timetables"/>
+    <table id="33" parent="3" name="unitcalendars"/>
+    <table id="34" parent="3" name="unitemployees"/>
+    <table id="35" parent="3" name="unitprojects"/>
+    <table id="36" parent="3" name="units"/>
+    <table id="37" parent="3" name="unitschedules"/>
+    <table id="38" parent="3" name="vacationdemandtest"/>
+    <table id="39" parent="3" name="vacations"/>
+    <table id="40" parent="5" name="columns_priv"/>
+    <table id="41" parent="5" name="db"/>
+    <table id="42" parent="5" name="event"/>
+    <table id="43" parent="5" name="func"/>
+    <table id="44" parent="5" name="general_log"/>
+    <table id="45" parent="5" name="help_category"/>
+    <table id="46" parent="5" name="help_keyword"/>
+    <table id="47" parent="5" name="help_relation"/>
+    <table id="48" parent="5" name="help_topic"/>
+    <table id="49" parent="5" name="host"/>
+    <table id="50" parent="5" name="ndb_binlog_index"/>
+    <table id="51" parent="5" name="plugin"/>
+    <table id="52" parent="5" name="proc"/>
+    <table id="53" parent="5" name="procs_priv"/>
+    <table id="54" parent="5" name="servers"/>
+    <table id="55" parent="5" name="slow_log"/>
+    <table id="56" parent="5" name="tables_priv"/>
+    <table id="57" parent="5" name="time_zone"/>
+    <table id="58" parent="5" name="time_zone_leap_second"/>
+    <table id="59" parent="5" name="time_zone_name"/>
+    <table id="60" parent="5" name="time_zone_transition"/>
+    <table id="61" parent="5" name="time_zone_transition_type"/>
+    <table id="62" parent="5" name="user"/>
+    <table id="63" parent="6" name="accountbalance"/>
+    <table id="64" parent="6" name="auction"/>
+    <table id="65" parent="6" name="notification"/>
+    <table id="66" parent="6" name="searchtype"/>
+    <table id="67" parent="6" name="user"/>
+    <table id="68" parent="7" name="user"/>
+    <routine id="69" parent="7" name="GetAllUsers"/>
+    <table id="70" parent="8" name="admin"/>
+    <table id="71" parent="8" name="oauth_access_tokens"/>
+    <table id="72" parent="8" name="oauth_clients"/>
+    <table id="73" parent="8" name="oauth_refresh_tokens"/>
+    <table id="74" parent="8" name="user"/>
+    <table id="75" parent="9" name="product"/>
+    <table id="76" parent="9" name="user"/>
+    <table id="77" parent="10" name="menu"/>
+    <table id="78" parent="10" name="product"/>
+    <table id="79" parent="10" name="settedmenu"/>
+    <table id="80" parent="10" name="settedproduct"/>
+    <table id="81" parent="10" name="settedsubmenu"/>
+    <table id="82" parent="10" name="submenu"/>
+    <table id="83" parent="10" name="user"/>
+    <column id="84" parent="12" name="id">
+      <DataType>INT(10)|4</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="85" parent="12" name="created_by">
+      <DataType>INT(10)|4</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="86" parent="12" name="writable_byGroup">
+      <DataType>INT(10)|4</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="87" parent="12" name="readable_byGroup">
+      <DataType>INT(10)|4</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="88" parent="12" name="valid_for">
+      <DataType>INT(10)|4</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="89" parent="12" name="create_date">
+      <DataType>DATETIME(0)|93</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;0000-00-00 00:00:00&apos;</DefaultExpression>
+    </column>
+    <column id="90" parent="12" name="title">
+      <DataType>VARCHAR(60)|12</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="91" parent="12" name="description">
+      <DataType>VARCHAR(60)|12</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="92" parent="12" name="valid_from">
+      <DataType>VARCHAR(60)|12</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="93" parent="12" name="valid_to">
+      <DataType>VARCHAR(60)|12</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="94" parent="12" name="demand">
+      <DataType>VARCHAR(50)|12</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="95" parent="12" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="96" parent="13" name="id">
+      <DataType>INT(10)|4</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="97" parent="13" name="username">
+      <DataType>VARCHAR(45)|12</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="98" parent="13" name="password">
+      <DataType>VARCHAR(60)|12</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="99" parent="13" name="type">
+      <DataType>ENUM(6)|1</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="100" parent="13" name="create_date">
+      <DataType>DATETIME(0)|93</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;0000-00-00 00:00:00&apos;</DefaultExpression>
+    </column>
+    <key id="101" parent="13" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="102" parent="14" name="id">
+      <DataType>INT(10)|4</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="103" parent="14" name="comment">
+      <DataType>VARCHAR(400)|12</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="104" parent="14" name="fromDate">
+      <DataType>DATETIME(0)|93</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="105" parent="14" name="toDate">
+      <DataType>DATETIME(0)|93</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="106" parent="14" name="idEmployee">
+      <DataType>INT(10)|4</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="107" parent="14" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="108" parent="14" name="absence_2_employee">
+      <ColNames>idEmployee</ColNames>
+      <RefTableName>employees</RefTableName>
+      <RefKeyName>PRIMARY</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="109" parent="15" name="id">
+      <DataType>INT(10)|4</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="110" parent="15" name="addressLineA">
+      <DataType>VARCHAR(100)|12</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="111" parent="15" name="addressLineB">
+      <DataType>VARCHAR(100)|12</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="112" parent="15" name="addressLineC">
+      <DataType>VARCHAR(100)|12</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="113" parent="15" name="addressStateProvince">
+      <DataType>VARCHAR(100)|12</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="114" parent="15" name="addressPostalCode">
+      <DataType>VARCHAR(20)|12</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="115" parent="15" name="addressCity">
+      <DataType>VARCHAR(100)|12</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="116" parent="15" name="addressCountry">
+      <DataType>VARCHAR(100)|12</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="117" parent="15" name="addressType">
+      <DataType>ENUM(5)|1</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="118" parent="15" name="idContact">
+      <DataType>INT(10)|4</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="119" parent="15" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="120" parent="15" name="address_2_contact">
+      <ColNames>idContact</ColNames>
+      <RefTableName>contacts</RefTableName>
+      <RefKeyName>PRIMARY</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="121" parent="16" name="id">
+      <DataType>INT(10)|4</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="122" parent="16" name="name">
+      <DataType>VARCHAR(100)|12</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="123" parent="16" name="createdBy">
+      <DataType>INT(10)|4</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="124" parent="16" name="createdDate">
+      <DataType>DATETIME(0)|93</DataType>
+    </column>
+    <key id="125" parent="16" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="126" parent="16" name="calendar_2_employee">
+      <ColNames>createdBy</ColNames>
+      <RefTableName>employees</RefTableName>
+      <RefKeyName>PRIMARY</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="127" parent="17" name="id">
+      <DataType>INT(10)|4</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="128" parent="17" name="name">
+      <DataType>VARCHAR(100)|12</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="129" parent="17" name="companyName">
+      <DataType>VARCHAR(100)|12</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="130" parent="17" name="url">
+      <DataType>VARCHAR(255)|12</DataType>
+    </column>
+    <column id="131" parent="17" name="phoneNumberWork">
+      <DataType>VARCHAR(20)|12</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="132" parent="17" name="phoneNumberWorkDirect">
+      <DataType>VARCHAR(20)|12</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="133" parent="17" name="phoneNumberHome">
+      <DataType>VARCHAR(20)|12</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="134" parent="17" name="phoneNumberMobile">
+      <DataType>VARCHAR(20)|12</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="135" parent="17" name="emailWork">
+      <DataType>VARCHAR(100)|12</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="136" parent="17" name="emailHome">
+      <DataType>VARCHAR(100)|12</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="137" parent="17" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="138" parent="18" name="id">
+      <DataType>INT(10)|4</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="139" parent="18" name="idCalendar">
+      <DataType>INT(10)|4</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="140" parent="18" name="idEmployee">
+      <DataType>INT(10)|4</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="141" parent="18" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="142" parent="18" name="employeeCalendar_2_employee">
+      <ColNames>idEmployee</ColNames>
+      <RefTableName>employees</RefTableName>
+      <RefKeyName>PRIMARY</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <foreign-key id="143" parent="18" name="employeeCalendar_2_role">
+      <ColNames>idCalendar</ColNames>
+      <RefTableName>calendars</RefTableName>
+      <RefKeyName>PRIMARY</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="144" parent="19" name="id">
+      <DataType>INT(10)|4</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="145" parent="19" name="idGroup">
+      <DataType>INT(10)|4</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="146" parent="19" name="idEmployee">
+      <DataType>INT(10)|4</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="147" parent="19" name="joinDate">
+      <DataType>DATETIME(0)|93</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="148" parent="19" name="expiryDate">
+      <DataType>DATETIME(0)|93</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="149" parent="19" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="150" parent="19" name="employeeGroup_2_employee">
+      <ColNames>idEmployee</ColNames>
+      <RefTableName>employees</RefTableName>
+      <RefKeyName>PRIMARY</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <foreign-key id="151" parent="19" name="employeeGroup_2_group">
+      <ColNames>idGroup</ColNames>
+      <RefTableName>groups</RefTableName>
+      <RefKeyName>PRIMARY</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="152" parent="20" name="id">
+      <DataType>INT(10)|4</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="153" parent="20" name="idRole">
+      <DataType>INT(10)|4</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="154" parent="20" name="idEmployee">
+      <DataType>INT(10)|4</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="155" parent="20" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="156" parent="20" name="employeeRoles_2_employee">
+      <ColNames>idEmployee</ColNames>
+      <RefTableName>employees</RefTableName>
+      <RefKeyName>PRIMARY</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <foreign-key id="157" parent="20" name="employeeRoles_2_role">
+      <ColNames>idRole</ColNames>
+      <RefTableName>roles</RefTableName>
+      <RefKeyName>PRIMARY</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="158" parent="21" name="id">
+      <DataType>INT(10)|4</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="159" parent="21" name="username">
+      <DataType>VARCHAR(5)|12</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="160" parent="21" name="password">
+      <DataType>VARCHAR(60)|12</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="161" parent="21" name="passwordDate">
+      <DataType>DATETIME(0)|93</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="162" parent="21" name="profilePictureURL">
+      <DataType>VARCHAR(200)|12</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="163" parent="21" name="lastLogin">
+      <DataType>INT(10)|4</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="164" parent="21" name="employeeNumber">
+      <DataType>INT(10)|4</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="165" parent="21" name="title">
+      <DataType>VARCHAR(100)|12</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="166" parent="21" name="nameFirst">
+      <DataType>VARCHAR(100)|12</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="167" parent="21" name="nameMiddle">
+      <DataType>VARCHAR(100)|12</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="168" parent="21" name="nameLast">
+      <DataType>VARCHAR(100)|12</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="169" parent="21" name="gender">
+      <DataType>ENUM(6)|1</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="170" parent="21" name="birthday">
+      <DataType>DATE(0)|91</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="171" parent="21" name="maritalStatus">
+      <DataType>ENUM(12)|1</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="172" parent="21" name="partnerInCompany">
+      <DataType>INT(10)|4</DataType>
+    </column>
+    <column id="173" parent="21" name="hireDate">
+      <DataType>DATE(0)|91</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="174" parent="21" name="vacationHours">
+      <DataType>INT(10)|4</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="175" parent="21" name="vacationDays">
+      <DataType>INT(10)|4</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="176" parent="21" name="sickLeaveHours">
+      <DataType>INT(10)|4</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="177" parent="21" name="sickLeaveDays">
+      <DataType>INT(10)|4</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="178" parent="21" name="idContacts">
+      <DataType>INT(10)|4</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="179" parent="21" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="180" parent="22" name="id">
+      <DataType>INT(10)|4</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="181" parent="22" name="name">
+      <DataType>VARCHAR(100)|12</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="182" parent="22" name="owner">
+      <DataType>INT(10)|4</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="183" parent="22" name="idPrivilege">
+      <DataType>INT(10)|4</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="184" parent="22" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="185" parent="22" name="group_2_employee">
+      <ColNames>owner</ColNames>
+      <RefTableName>employees</RefTableName>
+      <RefKeyName>PRIMARY</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <foreign-key id="186" parent="22" name="group_2_privilege">
+      <ColNames>idPrivilege</ColNames>
+      <RefTableName>privileges</RefTableName>
+      <RefKeyName>PRIMARY</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="187" parent="23" name="id">
+      <DataType>INT(10)|4</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="188" parent="23" name="idEmployee">
+      <DataType>INT(10)|4</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="189" parent="23" name="dateTime">
+      <DataType>DATETIME(0)|93</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="190" parent="23" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="191" parent="23" name="login_2_employee">
+      <ColNames>idEmployee</ColNames>
+      <RefTableName>employees</RefTableName>
+      <RefKeyName>PRIMARY</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="192" parent="24" name="id">
+      <DataType>INT(10)|4</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="193" parent="24" name="name">
+      <DataType>VARCHAR(200)|12</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="194" parent="24" name="description">
+      <DataType>VARCHAR(200)|12</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="195" parent="24" name="needsArray">
+      <DataType>VARCHAR(6000)|12</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="196" parent="24" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="197" parent="25" name="id">
+      <DataType>INT(10)|4</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="198" parent="25" name="name">
+      <DataType>VARCHAR(100)|12</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="199" parent="25" name="accessLevel">
+      <DataType>INT(10)|4</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="200" parent="25" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="201" parent="26" name="id">
+      <DataType>INT(10)|4</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="202" parent="26" name="name">
+      <DataType>VARCHAR(100)|12</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="203" parent="26" name="description">
+      <DataType>VARCHAR(100)|12</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="204" parent="26" name="owner">
+      <DataType>INT(10)|4</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="205" parent="26" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="206" parent="26" name="project_2_employee">
+      <ColNames>owner</ColNames>
+      <RefTableName>employees</RefTableName>
+      <RefKeyName>PRIMARY</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="207" parent="27" name="id">
+      <DataType>INT(10)|4</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="208" parent="27" name="title">
+      <DataType>VARCHAR(100)|12</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="209" parent="27" name="description">
+      <DataType>VARCHAR(100)|12</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="210" parent="27" name="idPrivilege">
+      <DataType>INT(10)|4</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="211" parent="27" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="212" parent="27" name="role_2_privilege">
+      <ColNames>idPrivilege</ColNames>
+      <RefTableName>privileges</RefTableName>
+      <RefKeyName>PRIMARY</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="213" parent="28" name="id">
+      <DataType>INT(10)|4</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="214" parent="28" name="idSchedule">
+      <DataType>INT(10)|4</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="215" parent="28" name="idNeed">
+      <DataType>INT(10)|4</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="216" parent="28" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="217" parent="28" name="scheduleNeed_2_need">
+      <ColNames>idNeed</ColNames>
+      <RefTableName>needs</RefTableName>
+      <RefKeyName>PRIMARY</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <foreign-key id="218" parent="28" name="scheduleNeed_2_schedule">
+      <ColNames>idSchedule</ColNames>
+      <RefTableName>schedules</RefTableName>
+      <RefKeyName>PRIMARY</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="219" parent="29" name="id">
+      <DataType>INT(10)|4</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="220" parent="29" name="name">
+      <DataType>VARCHAR(200)|12</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="221" parent="29" name="description">
+      <DataType>VARCHAR(200)|12</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="222" parent="29" name="timeSubdivision">
+      <DataType>INT(10)|4</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="223" parent="29" name="dateBegin">
+      <DataType>DATE(0)|91</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="224" parent="29" name="dateEnd">
+      <DataType>DATE(0)|91</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="225" parent="29" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="226" parent="30" name="id">
+      <DataType>INT(10)|4</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="227" parent="30" name="idSchedule">
+      <DataType>INT(10)|4</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="228" parent="30" name="idShift">
+      <DataType>INT(10)|4</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="229" parent="30" name="idTimetable">
+      <DataType>INT(10)|4</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="230" parent="30" name="idEmployee">
+      <DataType>INT(10)|4</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="231" parent="30" name="dateBegin">
+      <DataType>DATE(0)|91</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="232" parent="30" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="233" parent="30" name="scheduleShift_2_employee">
+      <ColNames>idEmployee</ColNames>
+      <RefTableName>employees</RefTableName>
+      <RefKeyName>PRIMARY</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <foreign-key id="234" parent="30" name="scheduleShift_2_schedule">
+      <ColNames>idSchedule</ColNames>
+      <RefTableName>schedules</RefTableName>
+      <RefKeyName>PRIMARY</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <foreign-key id="235" parent="30" name="scheduleShift_2_shift">
+      <ColNames>idShift</ColNames>
+      <RefTableName>shifts</RefTableName>
+      <RefKeyName>PRIMARY</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <foreign-key id="236" parent="30" name="scheduleShift_2_timeTable">
+      <ColNames>idTimetable</ColNames>
+      <RefTableName>timetables</RefTableName>
+      <RefKeyName>PRIMARY</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="237" parent="31" name="id">
+      <DataType>INT(10)|4</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="238" parent="31" name="name">
+      <DataType>VARCHAR(50)|12</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="239" parent="31" name="timeBegin">
+      <DataType>INT(10)|4</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="240" parent="31" name="timeEnd">
+      <DataType>INT(10)|4</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="241" parent="31" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="242" parent="32" name="id">
+      <DataType>INT(10)|4</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="243" parent="32" name="timeSubdivision">
+      <DataType>INT(10)|4</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="244" parent="32" name="timeArray">
+      <DataType>VARCHAR(6000)|12</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="245" parent="32" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="246" parent="33" name="id">
+      <DataType>INT(10)|4</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="247" parent="33" name="idCalendar">
+      <DataType>INT(10)|4</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="248" parent="33" name="idUnit">
+      <DataType>INT(10)|4</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="249" parent="33" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="250" parent="33" name="unitCalendar_2_calendar">
+      <ColNames>idCalendar</ColNames>
+      <RefTableName>calendars</RefTableName>
+      <RefKeyName>PRIMARY</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <foreign-key id="251" parent="33" name="unitCalendar_2_unit">
+      <ColNames>idUnit</ColNames>
+      <RefTableName>units</RefTableName>
+      <RefKeyName>PRIMARY</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="252" parent="34" name="id">
+      <DataType>INT(10)|4</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="253" parent="34" name="idEmployee">
+      <DataType>INT(10)|4</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="254" parent="34" name="idUnit">
+      <DataType>INT(10)|4</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="255" parent="34" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="256" parent="34" name="unitEmployee_2_employee">
+      <ColNames>idEmployee</ColNames>
+      <RefTableName>employees</RefTableName>
+      <RefKeyName>PRIMARY</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <foreign-key id="257" parent="34" name="unitEmployee_2_unit">
+      <ColNames>idUnit</ColNames>
+      <RefTableName>units</RefTableName>
+      <RefKeyName>PRIMARY</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="258" parent="35" name="id">
+      <DataType>INT(10)|4</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="259" parent="35" name="idProject">
+      <DataType>INT(10)|4</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="260" parent="35" name="idUnit">
+      <DataType>INT(10)|4</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="261" parent="35" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="262" parent="35" name="unitProject_2_project">
+      <ColNames>idProject</ColNames>
+      <RefTableName>projects</RefTableName>
+      <RefKeyName>PRIMARY</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <foreign-key id="263" parent="35" name="unitProject_2_unit">
+      <ColNames>idUnit</ColNames>
+      <RefTableName>units</RefTableName>
+      <RefKeyName>PRIMARY</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="264" parent="36" name="id">
+      <DataType>INT(10)|4</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="265" parent="36" name="name">
+      <DataType>VARCHAR(50)|12</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="266" parent="36" name="abbreviation">
+      <DataType>VARCHAR(20)|12</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="267" parent="36" name="locationIndicator">
+      <DataType>VARCHAR(4)|12</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="268" parent="36" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="269" parent="37" name="id">
+      <DataType>INT(10)|4</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="270" parent="37" name="idSchedule">
+      <DataType>INT(10)|4</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="271" parent="37" name="idUnit">
+      <DataType>INT(10)|4</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="272" parent="37" name="name">
+      <DataType>VARCHAR(100)|12</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="273" parent="37" name="description">
+      <DataType>VARCHAR(100)|12</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="274" parent="37" name="validFrom">
+      <DataType>DATE(0)|91</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="275" parent="37" name="validTo">
+      <DataType>DATE(0)|91</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="276" parent="37" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="277" parent="37" name="unitSchedule_2_schedule">
+      <ColNames>idSchedule</ColNames>
+      <RefTableName>schedules</RefTableName>
+      <RefKeyName>PRIMARY</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <foreign-key id="278" parent="37" name="unitSchedule_2_unit">
+      <ColNames>idUnit</ColNames>
+      <RefTableName>units</RefTableName>
+      <RefKeyName>PRIMARY</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="279" parent="38" name="id">
+      <DataType>INT(10)|4</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="280" parent="38" name="week">
+      <DataType>INT(10)|4</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="281" parent="38" name="allowedNumber">
+      <DataType>INT(10)|4</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="282" parent="38" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="283" parent="39" name="id">
+      <DataType>INT(10)|4</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="284" parent="39" name="comment">
+      <DataType>VARCHAR(400)|12</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="285" parent="39" name="fromDate">
+      <DataType>DATETIME(0)|93</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="286" parent="39" name="toDate">
+      <DataType>DATETIME(0)|93</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="287" parent="39" name="idEmployee">
+      <DataType>INT(10)|4</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="288" parent="39" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="289" parent="39" name="vacation_2_employee">
+      <ColNames>idEmployee</ColNames>
+      <RefTableName>employees</RefTableName>
+      <RefKeyName>PRIMARY</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="290" parent="40" name="Host">
+      <DataType>CHAR(60)|1</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="291" parent="40" name="Db">
+      <DataType>CHAR(64)|1</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="292" parent="40" name="User">
+      <DataType>CHAR(16)|1</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="293" parent="40" name="Table_name">
+      <DataType>CHAR(64)|1</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="294" parent="40" name="Column_name">
+      <DataType>CHAR(64)|1</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="295" parent="40" name="Timestamp">
+      <DataType>TIMESTAMP(0)|93</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+    </column>
+    <column id="296" parent="40" name="Column_priv">
+      <DataType>SET(31)|1</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <key id="297" parent="40" name="PRIMARY">
+      <ColNames>Host
+Db
+User
+Table_name
+Column_name</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="298" parent="41" name="Host">
+      <DataType>CHAR(60)|1</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="299" parent="41" name="Db">
+      <DataType>CHAR(64)|1</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="300" parent="41" name="User">
+      <DataType>CHAR(16)|1</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="301" parent="41" name="Select_priv">
+      <DataType>ENUM(2)|1</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;N&apos;</DefaultExpression>
+    </column>
+    <column id="302" parent="41" name="Insert_priv">
+      <DataType>ENUM(2)|1</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;N&apos;</DefaultExpression>
+    </column>
+    <column id="303" parent="41" name="Update_priv">
+      <DataType>ENUM(2)|1</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;N&apos;</DefaultExpression>
+    </column>
+    <column id="304" parent="41" name="Delete_priv">
+      <DataType>ENUM(2)|1</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;N&apos;</DefaultExpression>
+    </column>
+    <column id="305" parent="41" name="Create_priv">
+      <DataType>ENUM(2)|1</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;N&apos;</DefaultExpression>
+    </column>
+    <column id="306" parent="41" name="Drop_priv">
+      <DataType>ENUM(2)|1</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;N&apos;</DefaultExpression>
+    </column>
+    <column id="307" parent="41" name="Grant_priv">
+      <DataType>ENUM(2)|1</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;N&apos;</DefaultExpression>
+    </column>
+    <column id="308" parent="41" name="References_priv">
+      <DataType>ENUM(2)|1</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;N&apos;</DefaultExpression>
+    </column>
+    <column id="309" parent="41" name="Index_priv">
+      <DataType>ENUM(2)|1</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;N&apos;</DefaultExpression>
+    </column>
+    <column id="310" parent="41" name="Alter_priv">
+      <DataType>ENUM(2)|1</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;N&apos;</DefaultExpression>
+    </column>
+    <column id="311" parent="41" name="Create_tmp_table_priv">
+      <DataType>ENUM(2)|1</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;N&apos;</DefaultExpression>
+    </column>
+    <column id="312" parent="41" name="Lock_tables_priv">
+      <DataType>ENUM(2)|1</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;N&apos;</DefaultExpression>
+    </column>
+    <column id="313" parent="41" name="Create_view_priv">
+      <DataType>ENUM(2)|1</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;N&apos;</DefaultExpression>
+    </column>
+    <column id="314" parent="41" name="Show_view_priv">
+      <DataType>ENUM(2)|1</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;N&apos;</DefaultExpression>
+    </column>
+    <column id="315" parent="41" name="Create_routine_priv">
+      <DataType>ENUM(2)|1</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;N&apos;</DefaultExpression>
+    </column>
+    <column id="316" parent="41" name="Alter_routine_priv">
+      <DataType>ENUM(2)|1</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;N&apos;</DefaultExpression>
+    </column>
+    <column id="317" parent="41" name="Execute_priv">
+      <DataType>ENUM(2)|1</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;N&apos;</DefaultExpression>
+    </column>
+    <column id="318" parent="41" name="Event_priv">
+      <DataType>ENUM(2)|1</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;N&apos;</DefaultExpression>
+    </column>
+    <column id="319" parent="41" name="Trigger_priv">
+      <DataType>ENUM(2)|1</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;N&apos;</DefaultExpression>
+    </column>
+    <key id="320" parent="41" name="PRIMARY">
+      <ColNames>Host
+Db
+User</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="321" parent="42" name="db">
+      <DataType>CHAR(64)|1</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="322" parent="42" name="name">
+      <DataType>CHAR(64)|1</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="323" parent="42" name="body">
+      <DataType>LONGBLOB(max)|-4</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="324" parent="42" name="definer">
+      <DataType>CHAR(77)|1</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="325" parent="42" name="execute_at">
+      <DataType>DATETIME(0)|93</DataType>
+    </column>
+    <column id="326" parent="42" name="interval_value">
+      <DataType>INT(10)|4</DataType>
+    </column>
+    <column id="327" parent="42" name="interval_field">
+      <DataType>ENUM(18)|1</DataType>
+    </column>
+    <column id="328" parent="42" name="created">
+      <DataType>TIMESTAMP(0)|93</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+    </column>
+    <column id="329" parent="42" name="modified">
+      <DataType>TIMESTAMP(0)|93</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;0000-00-00 00:00:00&apos;</DefaultExpression>
+    </column>
+    <column id="330" parent="42" name="last_executed">
+      <DataType>DATETIME(0)|93</DataType>
+    </column>
+    <column id="331" parent="42" name="starts">
+      <DataType>DATETIME(0)|93</DataType>
+    </column>
+    <column id="332" parent="42" name="ends">
+      <DataType>DATETIME(0)|93</DataType>
+    </column>
+    <column id="333" parent="42" name="status">
+      <DataType>ENUM(18)|1</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;ENABLED&apos;</DefaultExpression>
+    </column>
+    <column id="334" parent="42" name="on_completion">
+      <DataType>ENUM(8)|1</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;DROP&apos;</DefaultExpression>
+    </column>
+    <column id="335" parent="42" name="sql_mode">
+      <DataType>SET UNSIGNED(450)|1</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="336" parent="42" name="comment">
+      <DataType>CHAR(64)|1</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="337" parent="42" name="originator">
+      <DataType>INT UNSIGNED(10)|4</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="338" parent="42" name="time_zone">
+      <DataType>CHAR(64)|1</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;SYSTEM&apos;</DefaultExpression>
+    </column>
+    <column id="339" parent="42" name="character_set_client">
+      <DataType>CHAR(32)|1</DataType>
+    </column>
+    <column id="340" parent="42" name="collation_connection">
+      <DataType>CHAR(32)|1</DataType>
+    </column>
+    <column id="341" parent="42" name="db_collation">
+      <DataType>CHAR(32)|1</DataType>
+    </column>
+    <column id="342" parent="42" name="body_utf8">
+      <DataType>LONGBLOB(max)|-4</DataType>
+    </column>
+    <key id="343" parent="42" name="PRIMARY">
+      <ColNames>db
+name</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="344" parent="43" name="name">
+      <DataType>CHAR(64)|1</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="345" parent="43" name="ret">
+      <DataType>TINYINT(3)|-6</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>0</DefaultExpression>
+    </column>
+    <column id="346" parent="43" name="dl">
+      <DataType>CHAR(128)|1</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="347" parent="43" name="type">
+      <DataType>ENUM(9)|1</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="348" parent="43" name="PRIMARY">
+      <ColNames>name</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="349" parent="44" name="event_time">
+      <DataType>TIMESTAMP(0)|93</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+    </column>
+    <column id="350" parent="44" name="user_host">
+      <DataType>MEDIUMTEXT(16777215)|-1</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="351" parent="44" name="thread_id">
+      <DataType>INT(10)|4</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="352" parent="44" name="server_id">
+      <DataType>INT UNSIGNED(10)|4</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="353" parent="44" name="command_type">
+      <DataType>VARCHAR(64)|12</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="354" parent="44" name="argument">
+      <DataType>MEDIUMTEXT(16777215)|-1</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="355" parent="45" name="help_category_id">
+      <DataType>SMALLINT UNSIGNED(5)|5</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="356" parent="45" name="name">
+      <DataType>CHAR(64)|1</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="357" parent="45" name="parent_category_id">
+      <DataType>SMALLINT UNSIGNED(5)|5</DataType>
+    </column>
+    <column id="358" parent="45" name="url">
+      <DataType>TEXT(65535)|-1</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="359" parent="45" name="PRIMARY">
+      <ColNames>help_category_id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="360" parent="46" name="help_keyword_id">
+      <DataType>INT UNSIGNED(10)|4</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="361" parent="46" name="name">
+      <DataType>CHAR(64)|1</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="362" parent="46" name="PRIMARY">
+      <ColNames>help_keyword_id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="363" parent="47" name="help_topic_id">
+      <DataType>INT UNSIGNED(10)|4</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="364" parent="47" name="help_keyword_id">
+      <DataType>INT UNSIGNED(10)|4</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="365" parent="47" name="PRIMARY">
+      <ColNames>help_keyword_id
+help_topic_id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="366" parent="48" name="help_topic_id">
+      <DataType>INT UNSIGNED(10)|4</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="367" parent="48" name="name">
+      <DataType>CHAR(64)|1</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="368" parent="48" name="help_category_id">
+      <DataType>SMALLINT UNSIGNED(5)|5</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="369" parent="48" name="description">
+      <DataType>TEXT(65535)|-1</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="370" parent="48" name="example">
+      <DataType>TEXT(65535)|-1</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="371" parent="48" name="url">
+      <DataType>TEXT(65535)|-1</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="372" parent="48" name="PRIMARY">
+      <ColNames>help_topic_id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="373" parent="49" name="Host">
+      <DataType>CHAR(60)|1</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="374" parent="49" name="Db">
+      <DataType>CHAR(64)|1</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="375" parent="49" name="Select_priv">
+      <DataType>ENUM(2)|1</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;N&apos;</DefaultExpression>
+    </column>
+    <column id="376" parent="49" name="Insert_priv">
+      <DataType>ENUM(2)|1</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;N&apos;</DefaultExpression>
+    </column>
+    <column id="377" parent="49" name="Update_priv">
+      <DataType>ENUM(2)|1</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;N&apos;</DefaultExpression>
+    </column>
+    <column id="378" parent="49" name="Delete_priv">
+      <DataType>ENUM(2)|1</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;N&apos;</DefaultExpression>
+    </column>
+    <column id="379" parent="49" name="Create_priv">
+      <DataType>ENUM(2)|1</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;N&apos;</DefaultExpression>
+    </column>
+    <column id="380" parent="49" name="Drop_priv">
+      <DataType>ENUM(2)|1</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;N&apos;</DefaultExpression>
+    </column>
+    <column id="381" parent="49" name="Grant_priv">
+      <DataType>ENUM(2)|1</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;N&apos;</DefaultExpression>
+    </column>
+    <column id="382" parent="49" name="References_priv">
+      <DataType>ENUM(2)|1</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;N&apos;</DefaultExpression>
+    </column>
+    <column id="383" parent="49" name="Index_priv">
+      <DataType>ENUM(2)|1</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;N&apos;</DefaultExpression>
+    </column>
+    <column id="384" parent="49" name="Alter_priv">
+      <DataType>ENUM(2)|1</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;N&apos;</DefaultExpression>
+    </column>
+    <column id="385" parent="49" name="Create_tmp_table_priv">
+      <DataType>ENUM(2)|1</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;N&apos;</DefaultExpression>
+    </column>
+    <column id="386" parent="49" name="Lock_tables_priv">
+      <DataType>ENUM(2)|1</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;N&apos;</DefaultExpression>
+    </column>
+    <column id="387" parent="49" name="Create_view_priv">
+      <DataType>ENUM(2)|1</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;N&apos;</DefaultExpression>
+    </column>
+    <column id="388" parent="49" name="Show_view_priv">
+      <DataType>ENUM(2)|1</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;N&apos;</DefaultExpression>
+    </column>
+    <column id="389" parent="49" name="Create_routine_priv">
+      <DataType>ENUM(2)|1</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;N&apos;</DefaultExpression>
+    </column>
+    <column id="390" parent="49" name="Alter_routine_priv">
+      <DataType>ENUM(2)|1</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;N&apos;</DefaultExpression>
+    </column>
+    <column id="391" parent="49" name="Execute_priv">
+      <DataType>ENUM(2)|1</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;N&apos;</DefaultExpression>
+    </column>
+    <column id="392" parent="49" name="Trigger_priv">
+      <DataType>ENUM(2)|1</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;N&apos;</DefaultExpression>
+    </column>
+    <key id="393" parent="49" name="PRIMARY">
+      <ColNames>Host
+Db</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="394" parent="50" name="Position">
+      <DataType>BIGINT UNSIGNED(20)|-5</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="395" parent="50" name="File">
+      <DataType>VARCHAR(255)|12</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="396" parent="50" name="epoch">
+      <DataType>BIGINT UNSIGNED(20)|-5</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="397" parent="50" name="inserts">
+      <DataType>BIGINT UNSIGNED(20)|-5</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="398" parent="50" name="updates">
+      <DataType>BIGINT UNSIGNED(20)|-5</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="399" parent="50" name="deletes">
+      <DataType>BIGINT UNSIGNED(20)|-5</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="400" parent="50" name="schemaops">
+      <DataType>BIGINT UNSIGNED(20)|-5</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="401" parent="50" name="PRIMARY">
+      <ColNames>epoch</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="402" parent="51" name="name">
+      <DataType>CHAR(64)|1</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="403" parent="51" name="dl">
+      <DataType>CHAR(128)|1</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <key id="404" parent="51" name="PRIMARY">
+      <ColNames>name</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="405" parent="52" name="db">
+      <DataType>CHAR(64)|1</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="406" parent="52" name="name">
+      <DataType>CHAR(64)|1</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="407" parent="52" name="type">
+      <DataType>ENUM(9)|1</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="408" parent="52" name="specific_name">
+      <DataType>CHAR(64)|1</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="409" parent="52" name="language">
+      <DataType>ENUM(4)|1</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;SQL&apos;</DefaultExpression>
+    </column>
+    <column id="410" parent="52" name="sql_data_access">
+      <DataType>ENUM(17)|1</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;CONTAINS_SQL&apos;</DefaultExpression>
+    </column>
+    <column id="411" parent="52" name="is_deterministic">
+      <DataType>ENUM(4)|1</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;NO&apos;</DefaultExpression>
+    </column>
+    <column id="412" parent="52" name="security_type">
+      <DataType>ENUM(8)|1</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;DEFINER&apos;</DefaultExpression>
+    </column>
+    <column id="413" parent="52" name="param_list">
+      <DataType>BLOB(65535)|-4</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="414" parent="52" name="returns">
+      <DataType>LONGBLOB(max)|-4</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="415" parent="52" name="body">
+      <DataType>LONGBLOB(max)|-4</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="416" parent="52" name="definer">
+      <DataType>CHAR(77)|1</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="417" parent="52" name="created">
+      <DataType>TIMESTAMP(0)|93</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+    </column>
+    <column id="418" parent="52" name="modified">
+      <DataType>TIMESTAMP(0)|93</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;0000-00-00 00:00:00&apos;</DefaultExpression>
+    </column>
+    <column id="419" parent="52" name="sql_mode">
+      <DataType>SET UNSIGNED(450)|1</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="420" parent="52" name="comment">
+      <DataType>CHAR(64)|1</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="421" parent="52" name="character_set_client">
+      <DataType>CHAR(32)|1</DataType>
+    </column>
+    <column id="422" parent="52" name="collation_connection">
+      <DataType>CHAR(32)|1</DataType>
+    </column>
+    <column id="423" parent="52" name="db_collation">
+      <DataType>CHAR(32)|1</DataType>
+    </column>
+    <column id="424" parent="52" name="body_utf8">
+      <DataType>LONGBLOB(max)|-4</DataType>
+    </column>
+    <key id="425" parent="52" name="PRIMARY">
+      <ColNames>db
+name
+type</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="426" parent="53" name="Host">
+      <DataType>CHAR(60)|1</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="427" parent="53" name="Db">
+      <DataType>CHAR(64)|1</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="428" parent="53" name="User">
+      <DataType>CHAR(16)|1</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="429" parent="53" name="Routine_name">
+      <DataType>CHAR(64)|1</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="430" parent="53" name="Routine_type">
+      <DataType>ENUM(9)|1</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="431" parent="53" name="Grantor">
+      <DataType>CHAR(77)|1</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="432" parent="53" name="Proc_priv">
+      <DataType>SET(28)|1</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="433" parent="53" name="Timestamp">
+      <DataType>TIMESTAMP(0)|93</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+    </column>
+    <key id="434" parent="53" name="PRIMARY">
+      <ColNames>Host
+Db
+User
+Routine_name
+Routine_type</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="435" parent="54" name="Server_name">
+      <DataType>CHAR(64)|1</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="436" parent="54" name="Host">
+      <DataType>CHAR(64)|1</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="437" parent="54" name="Db">
+      <DataType>CHAR(64)|1</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="438" parent="54" name="Username">
+      <DataType>CHAR(64)|1</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="439" parent="54" name="Password">
+      <DataType>CHAR(64)|1</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="440" parent="54" name="Port">
+      <DataType>INT(10)|4</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>0</DefaultExpression>
+    </column>
+    <column id="441" parent="54" name="Socket">
+      <DataType>CHAR(64)|1</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="442" parent="54" name="Wrapper">
+      <DataType>CHAR(64)|1</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="443" parent="54" name="Owner">
+      <DataType>CHAR(64)|1</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <key id="444" parent="54" name="PRIMARY">
+      <ColNames>Server_name</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="445" parent="55" name="start_time">
+      <DataType>TIMESTAMP(0)|93</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+    </column>
+    <column id="446" parent="55" name="user_host">
+      <DataType>MEDIUMTEXT(16777215)|-1</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="447" parent="55" name="query_time">
+      <DataType>TIME(0)|92</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="448" parent="55" name="lock_time">
+      <DataType>TIME(0)|92</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="449" parent="55" name="rows_sent">
+      <DataType>INT(10)|4</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="450" parent="55" name="rows_examined">
+      <DataType>INT(10)|4</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="451" parent="55" name="db">
+      <DataType>VARCHAR(512)|12</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="452" parent="55" name="last_insert_id">
+      <DataType>INT(10)|4</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="453" parent="55" name="insert_id">
+      <DataType>INT(10)|4</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="454" parent="55" name="server_id">
+      <DataType>INT UNSIGNED(10)|4</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="455" parent="55" name="sql_text">
+      <DataType>MEDIUMTEXT(16777215)|-1</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="456" parent="56" name="Host">
+      <DataType>CHAR(60)|1</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="457" parent="56" name="Db">
+      <DataType>CHAR(64)|1</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="458" parent="56" name="User">
+      <DataType>CHAR(16)|1</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="459" parent="56" name="Table_name">
+      <DataType>CHAR(64)|1</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="460" parent="56" name="Grantor">
+      <DataType>CHAR(77)|1</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="461" parent="56" name="Timestamp">
+      <DataType>TIMESTAMP(0)|93</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+    </column>
+    <column id="462" parent="56" name="Table_priv">
+      <DataType>SET(89)|1</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="463" parent="56" name="Column_priv">
+      <DataType>SET(31)|1</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <key id="464" parent="56" name="PRIMARY">
+      <ColNames>Host
+Db
+User
+Table_name</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="465" parent="57" name="Time_zone_id">
+      <DataType>INT UNSIGNED(10)|4</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="466" parent="57" name="Use_leap_seconds">
+      <DataType>ENUM(2)|1</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;N&apos;</DefaultExpression>
+    </column>
+    <key id="467" parent="57" name="PRIMARY">
+      <ColNames>Time_zone_id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="468" parent="58" name="Transition_time">
+      <DataType>BIGINT(19)|-5</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="469" parent="58" name="Correction">
+      <DataType>INT(10)|4</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="470" parent="58" name="PRIMARY">
+      <ColNames>Transition_time</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="471" parent="59" name="Name">
+      <DataType>CHAR(64)|1</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="472" parent="59" name="Time_zone_id">
+      <DataType>INT UNSIGNED(10)|4</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="473" parent="59" name="PRIMARY">
+      <ColNames>Name</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="474" parent="60" name="Time_zone_id">
+      <DataType>INT UNSIGNED(10)|4</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="475" parent="60" name="Transition_time">
+      <DataType>BIGINT(19)|-5</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="476" parent="60" name="Transition_type_id">
+      <DataType>INT UNSIGNED(10)|4</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="477" parent="60" name="PRIMARY">
+      <ColNames>Time_zone_id
+Transition_time</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="478" parent="61" name="Time_zone_id">
+      <DataType>INT UNSIGNED(10)|4</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="479" parent="61" name="Transition_type_id">
+      <DataType>INT UNSIGNED(10)|4</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="480" parent="61" name="Offset">
+      <DataType>INT(10)|4</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>0</DefaultExpression>
+    </column>
+    <column id="481" parent="61" name="Is_DST">
+      <DataType>TINYINT UNSIGNED(3)|-6</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>0</DefaultExpression>
+    </column>
+    <column id="482" parent="61" name="Abbreviation">
+      <DataType>CHAR(8)|1</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <key id="483" parent="61" name="PRIMARY">
+      <ColNames>Time_zone_id
+Transition_type_id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="484" parent="62" name="Host">
+      <DataType>CHAR(60)|1</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="485" parent="62" name="User">
+      <DataType>CHAR(16)|1</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="486" parent="62" name="Password">
+      <DataType>CHAR(41)|1</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="487" parent="62" name="Select_priv">
+      <DataType>ENUM(2)|1</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;N&apos;</DefaultExpression>
+    </column>
+    <column id="488" parent="62" name="Insert_priv">
+      <DataType>ENUM(2)|1</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;N&apos;</DefaultExpression>
+    </column>
+    <column id="489" parent="62" name="Update_priv">
+      <DataType>ENUM(2)|1</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;N&apos;</DefaultExpression>
+    </column>
+    <column id="490" parent="62" name="Delete_priv">
+      <DataType>ENUM(2)|1</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;N&apos;</DefaultExpression>
+    </column>
+    <column id="491" parent="62" name="Create_priv">
+      <DataType>ENUM(2)|1</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;N&apos;</DefaultExpression>
+    </column>
+    <column id="492" parent="62" name="Drop_priv">
+      <DataType>ENUM(2)|1</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;N&apos;</DefaultExpression>
+    </column>
+    <column id="493" parent="62" name="Reload_priv">
+      <DataType>ENUM(2)|1</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;N&apos;</DefaultExpression>
+    </column>
+    <column id="494" parent="62" name="Shutdown_priv">
+      <DataType>ENUM(2)|1</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;N&apos;</DefaultExpression>
+    </column>
+    <column id="495" parent="62" name="Process_priv">
+      <DataType>ENUM(2)|1</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;N&apos;</DefaultExpression>
+    </column>
+    <column id="496" parent="62" name="File_priv">
+      <DataType>ENUM(2)|1</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;N&apos;</DefaultExpression>
+    </column>
+    <column id="497" parent="62" name="Grant_priv">
+      <DataType>ENUM(2)|1</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;N&apos;</DefaultExpression>
+    </column>
+    <column id="498" parent="62" name="References_priv">
+      <DataType>ENUM(2)|1</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;N&apos;</DefaultExpression>
+    </column>
+    <column id="499" parent="62" name="Index_priv">
+      <DataType>ENUM(2)|1</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;N&apos;</DefaultExpression>
+    </column>
+    <column id="500" parent="62" name="Alter_priv">
+      <DataType>ENUM(2)|1</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;N&apos;</DefaultExpression>
+    </column>
+    <column id="501" parent="62" name="Show_db_priv">
+      <DataType>ENUM(2)|1</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;N&apos;</DefaultExpression>
+    </column>
+    <column id="502" parent="62" name="Super_priv">
+      <DataType>ENUM(2)|1</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;N&apos;</DefaultExpression>
+    </column>
+    <column id="503" parent="62" name="Create_tmp_table_priv">
+      <DataType>ENUM(2)|1</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;N&apos;</DefaultExpression>
+    </column>
+    <column id="504" parent="62" name="Lock_tables_priv">
+      <DataType>ENUM(2)|1</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;N&apos;</DefaultExpression>
+    </column>
+    <column id="505" parent="62" name="Execute_priv">
+      <DataType>ENUM(2)|1</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;N&apos;</DefaultExpression>
+    </column>
+    <column id="506" parent="62" name="Repl_slave_priv">
+      <DataType>ENUM(2)|1</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;N&apos;</DefaultExpression>
+    </column>
+    <column id="507" parent="62" name="Repl_client_priv">
+      <DataType>ENUM(2)|1</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;N&apos;</DefaultExpression>
+    </column>
+    <column id="508" parent="62" name="Create_view_priv">
+      <DataType>ENUM(2)|1</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;N&apos;</DefaultExpression>
+    </column>
+    <column id="509" parent="62" name="Show_view_priv">
+      <DataType>ENUM(2)|1</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;N&apos;</DefaultExpression>
+    </column>
+    <column id="510" parent="62" name="Create_routine_priv">
+      <DataType>ENUM(2)|1</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;N&apos;</DefaultExpression>
+    </column>
+    <column id="511" parent="62" name="Alter_routine_priv">
+      <DataType>ENUM(2)|1</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;N&apos;</DefaultExpression>
+    </column>
+    <column id="512" parent="62" name="Create_user_priv">
+      <DataType>ENUM(2)|1</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;N&apos;</DefaultExpression>
+    </column>
+    <column id="513" parent="62" name="Event_priv">
+      <DataType>ENUM(2)|1</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;N&apos;</DefaultExpression>
+    </column>
+    <column id="514" parent="62" name="Trigger_priv">
+      <DataType>ENUM(2)|1</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;N&apos;</DefaultExpression>
+    </column>
+    <column id="515" parent="62" name="ssl_type">
+      <DataType>ENUM(9)|1</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="516" parent="62" name="ssl_cipher">
+      <DataType>BLOB(65535)|-4</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="517" parent="62" name="x509_issuer">
+      <DataType>BLOB(65535)|-4</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="518" parent="62" name="x509_subject">
+      <DataType>BLOB(65535)|-4</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="519" parent="62" name="max_questions">
+      <DataType>INT UNSIGNED(10)|4</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>0</DefaultExpression>
+    </column>
+    <column id="520" parent="62" name="max_updates">
+      <DataType>INT UNSIGNED(10)|4</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>0</DefaultExpression>
+    </column>
+    <column id="521" parent="62" name="max_connections">
+      <DataType>INT UNSIGNED(10)|4</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>0</DefaultExpression>
+    </column>
+    <column id="522" parent="62" name="max_user_connections">
+      <DataType>INT UNSIGNED(10)|4</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>0</DefaultExpression>
+    </column>
+    <key id="523" parent="62" name="PRIMARY">
+      <ColNames>Host
+User</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="524" parent="63" name="Id">
+      <DataType>INT(10)|4</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="525" parent="63" name="DefaultAccountBalance">
+      <DataType>DOUBLE(22)|8</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="526" parent="63" name="PRIMARY">
+      <ColNames>Id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="527" parent="64" name="AuctionId">
+      <DataType>INT(10)|4</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="528" parent="64" name="StartDate">
+      <DataType>VARCHAR(50)|12</DataType>
+    </column>
+    <column id="529" parent="64" name="Duration">
+      <DataType>VARCHAR(50)|12</DataType>
+    </column>
+    <column id="530" parent="64" name="ItemName">
+      <DataType>VARCHAR(50)|12</DataType>
+    </column>
+    <column id="531" parent="64" name="ItemType">
+      <DataType>VARCHAR(50)|12</DataType>
+    </column>
+    <column id="532" parent="64" name="ItemStartingPrice">
+      <DataType>DOUBLE(22)|8</DataType>
+    </column>
+    <column id="533" parent="64" name="ItemDescription">
+      <DataType>VARCHAR(500)|12</DataType>
+    </column>
+    <column id="534" parent="64" name="ItemUrl">
+      <DataType>VARCHAR(50)|12</DataType>
+    </column>
+    <column id="535" parent="64" name="ItemCondition">
+      <DataType>VARCHAR(50)|12</DataType>
+    </column>
+    <column id="536" parent="64" name="ItemCountry">
+      <DataType>VARCHAR(50)|12</DataType>
+    </column>
+    <column id="537" parent="64" name="SellerId">
+      <DataType>INT(10)|4</DataType>
+    </column>
+    <key id="538" parent="64" name="PRIMARY">
+      <ColNames>AuctionId</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="539" parent="65" name="UserId">
+      <DataType>INT(10)|4</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="540" parent="65" name="Date">
+      <DataType>VARCHAR(50)|12</DataType>
+    </column>
+    <column id="541" parent="65" name="Context">
+      <DataType>VARCHAR(300)|12</DataType>
+    </column>
+    <column id="542" parent="65" name="Seen">
+      <DataType>TINYINT(3)|-6</DataType>
+    </column>
+    <column id="543" parent="66" name="Type">
+      <DataType>VARCHAR(50)|12</DataType>
+    </column>
+    <column id="544" parent="67" name="UserId">
+      <DataType>INT(10)|4</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="545" parent="67" name="FirstName">
+      <DataType>VARCHAR(50)|12</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="546" parent="67" name="LastName">
+      <DataType>VARCHAR(50)|12</DataType>
+    </column>
+    <column id="547" parent="67" name="Email">
+      <DataType>VARCHAR(50)|12</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="548" parent="67" name="Phone">
+      <DataType>VARCHAR(50)|12</DataType>
+    </column>
+    <column id="549" parent="67" name="Password">
+      <DataType>VARCHAR(50)|12</DataType>
+    </column>
+    <column id="550" parent="67" name="AccountBalance">
+      <DataType>DOUBLE(22)|8</DataType>
+    </column>
+    <key id="551" parent="67" name="PRIMARY">
+      <ColNames>UserId</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="552" parent="68" name="UserId">
+      <DataType>INT(10)|4</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="553" parent="68" name="FirstName">
+      <DataType>VARCHAR(50)|12</DataType>
+    </column>
+    <column id="554" parent="68" name="LastName">
+      <DataType>VARCHAR(50)|12</DataType>
+    </column>
+    <column id="555" parent="68" name="Email">
+      <DataType>VARCHAR(50)|12</DataType>
+    </column>
+    <column id="556" parent="68" name="Password">
+      <DataType>VARCHAR(50)|12</DataType>
+    </column>
+    <key id="557" parent="68" name="PRIMARY">
+      <ColNames>UserId</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="558" parent="70" name="id">
+      <DataType>INT(10)|4</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="559" parent="70" name="role">
+      <DataType>ENUM(12)|1</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="560" parent="70" name="create_date">
+      <DataType>DATETIME(0)|93</DataType>
+    </column>
+    <column id="561" parent="70" name="last_login">
+      <DataType>DATETIME(0)|93</DataType>
+    </column>
+    <column id="562" parent="70" name="first_name">
+      <DataType>VARCHAR(45)|12</DataType>
+    </column>
+    <column id="563" parent="70" name="last_name">
+      <DataType>VARCHAR(45)|12</DataType>
+    </column>
+    <column id="564" parent="70" name="status">
+      <DataType>ENUM(8)|1</DataType>
+      <DefaultExpression>&apos;DISABLED&apos;</DefaultExpression>
+    </column>
+    <column id="565" parent="70" name="email">
+      <DataType>VARCHAR(45)|12</DataType>
+    </column>
+    <column id="566" parent="70" name="receive_email">
+      <DataType>TINYINT(3)|-6</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>0</DefaultExpression>
+    </column>
+    <key id="567" parent="70" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="568" parent="70" name="admin_2_user">
+      <ColNames>id</ColNames>
+      <RefTableName>user</RefTableName>
+      <RefKeyName>PRIMARY</RefKeyName>
+      <RefColNames>id</RefColNames>
+      <OnDelete>cascade</OnDelete>
+    </foreign-key>
+    <column id="569" parent="71" name="access_token">
+      <DataType>VARCHAR(45)|12</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="570" parent="71" name="client_id">
+      <DataType>VARCHAR(45)|12</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="571" parent="71" name="user_id">
+      <DataType>INT(10)|4</DataType>
+    </column>
+    <column id="572" parent="71" name="expires">
+      <DataType>TIMESTAMP(0)|93</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+    </column>
+    <foreign-key id="573" parent="71" name="user_2_access_tokens">
+      <ColNames>user_id</ColNames>
+      <RefTableName>user</RefTableName>
+      <RefKeyName>PRIMARY</RefKeyName>
+      <RefColNames>id</RefColNames>
+      <OnDelete>cascade</OnDelete>
+    </foreign-key>
+    <column id="574" parent="72" name="client_id">
+      <DataType>VARCHAR(45)|12</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="575" parent="72" name="client_secret">
+      <DataType>VARCHAR(45)|12</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="576" parent="72" name="redirect_uri">
+      <DataType>VARCHAR(45)|12</DataType>
+    </column>
+    <column id="577" parent="73" name="refresh_token">
+      <DataType>VARCHAR(45)|12</DataType>
+    </column>
+    <column id="578" parent="73" name="client_id">
+      <DataType>VARCHAR(45)|12</DataType>
+    </column>
+    <column id="579" parent="73" name="user_id">
+      <DataType>INT(10)|4</DataType>
+    </column>
+    <column id="580" parent="73" name="expires">
+      <DataType>TIMESTAMP(0)|93</DataType>
+    </column>
+    <foreign-key id="581" parent="73" name="user_2_refresh_tokens">
+      <ColNames>user_id</ColNames>
+      <RefTableName>user</RefTableName>
+      <RefKeyName>PRIMARY</RefKeyName>
+      <RefColNames>id</RefColNames>
+      <OnDelete>cascade</OnDelete>
+    </foreign-key>
+    <column id="582" parent="74" name="id">
+      <DataType>INT(10)|4</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="583" parent="74" name="username">
+      <DataType>VARCHAR(45)|12</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="584" parent="74" name="password">
+      <DataType>VARCHAR(60)|12</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="585" parent="74" name="type">
+      <DataType>ENUM(6)|1</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="586" parent="74" name="create_date">
+      <DataType>DATETIME(0)|93</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;0000-00-00 00:00:00&apos;</DefaultExpression>
+    </column>
+    <key id="587" parent="74" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="588" parent="75" name="Id">
+      <DataType>VARCHAR(50)|12</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="589" parent="75" name="Name">
+      <DataType>VARCHAR(50)|12</DataType>
+    </column>
+    <column id="590" parent="75" name="Price">
+      <DataType>DOUBLE(22)|8</DataType>
+    </column>
+    <column id="591" parent="75" name="Url">
+      <DataType>VARCHAR(50)|12</DataType>
+    </column>
+    <key id="592" parent="75" name="PRIMARY">
+      <ColNames>Id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="593" parent="76" name="UserId">
+      <DataType>INT(10)|4</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="594" parent="76" name="FirstName">
+      <DataType>VARCHAR(50)|12</DataType>
+    </column>
+    <column id="595" parent="76" name="Email">
+      <DataType>VARCHAR(50)|12</DataType>
+    </column>
+    <column id="596" parent="76" name="Password">
+      <DataType>VARCHAR(50)|12</DataType>
+    </column>
+    <key id="597" parent="76" name="PRIMARY">
+      <ColNames>UserId</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="598" parent="77" name="MenuID">
+      <DataType>INT(10)|4</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="599" parent="77" name="MenuName">
+      <DataType>VARCHAR(50)|12</DataType>
+    </column>
+    <key id="600" parent="77" name="PRIMARY">
+      <ColNames>MenuID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="601" parent="78" name="ProductID">
+      <DataType>VARCHAR(50)|12</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="602" parent="78" name="ProductName">
+      <DataType>VARCHAR(70)|12</DataType>
+    </column>
+    <column id="603" parent="78" name="ProductPrice">
+      <DataType>DOUBLE(22)|8</DataType>
+    </column>
+    <column id="604" parent="78" name="ProductPictureUrl">
+      <DataType>VARCHAR(50)|12</DataType>
+    </column>
+    <column id="605" parent="78" name="SubMenuID">
+      <DataType>INT(10)|4</DataType>
+    </column>
+    <key id="606" parent="78" name="PRIMARY">
+      <ColNames>ProductID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="607" parent="79" name="SettedMenuID">
+      <DataType>INT(10)|4</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="608" parent="79" name="PRIMARY">
+      <ColNames>SettedMenuID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="609" parent="80" name="SettedProductId">
+      <DataType>VARCHAR(50)|12</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="610" parent="80" name="PRIMARY">
+      <ColNames>SettedProductId</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="611" parent="81" name="SettedSubMenuID">
+      <DataType>INT(10)|4</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="612" parent="81" name="MenuID">
+      <DataType>INT(10)|4</DataType>
+    </column>
+    <key id="613" parent="81" name="PRIMARY">
+      <ColNames>SettedSubMenuID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="614" parent="82" name="SubMenuID">
+      <DataType>INT(10)|4</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="615" parent="82" name="SubMenuName">
+      <DataType>VARCHAR(50)|12</DataType>
+    </column>
+    <column id="616" parent="82" name="MenuID">
+      <DataType>VARCHAR(50)|12</DataType>
+    </column>
+    <key id="617" parent="82" name="PRIMARY">
+      <ColNames>SubMenuID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="618" parent="83" name="UserId">
+      <DataType>INT(10)|4</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="619" parent="83" name="FirstName">
+      <DataType>VARCHAR(50)|12</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="620" parent="83" name="LastName">
+      <DataType>VARCHAR(50)|12</DataType>
+    </column>
+    <column id="621" parent="83" name="Email">
+      <DataType>VARCHAR(50)|12</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="622" parent="83" name="Phone">
+      <DataType>VARCHAR(50)|12</DataType>
+    </column>
+    <column id="623" parent="83" name="Password">
+      <DataType>VARCHAR(50)|12</DataType>
+    </column>
+    <key id="624" parent="83" name="PRIMARY">
+      <ColNames>UserId</ColNames>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>
